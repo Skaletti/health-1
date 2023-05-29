@@ -12,18 +12,15 @@
     padding: 21px 24px;
     margin-bottom: 32px;
 }
-
 .content-block__history-link a {
     font-family: 'GolosText-Regular', sans-serif;
     font-size: 20px;
     line-height: 24px;
     color: #0D81ED;
 }
-
 .content-block__history-link img {
     margin-right: 16px;
 }
-
 .content-block__history-description {
     max-width: 560px;
     width: 100%;
@@ -35,17 +32,14 @@
 .content-block__history-description p {
     font-size: 14px;
 }
-
 #location-map {
     width: 492px;
     height: 513px;
 }
-
 .content-block__location {
     border: 1px solid #E4E4E4;
     border-radius: 12px;
 }
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .location .content-block {
         flex-wrap: wrap;
@@ -56,11 +50,13 @@
     .content-block__history-link a {
         font-size: 12px;
     }
-    .content-block__history-description p {
-        font-size: 16px;
+    .content-block__history-link  {
+        margin: 0;
+    }
+    .content-block__history-description {
+        display: none;
     }
 }
-
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .location .content-block {
         flex-wrap: wrap;
@@ -72,7 +68,6 @@
         font-size: 10px;
     }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .content-block__history-link a {
         font-size: 16px;
