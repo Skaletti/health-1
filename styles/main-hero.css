@@ -1,6 +1,9 @@
 .main-hero {
     margin-bottom: 106px;
 }
+.main-hero__title {
+    margin-bottom: 32px;
+}
 .main-hero__link {
     margin-bottom: 64px;
 }
@@ -21,6 +24,7 @@
     line-height: 24px;
     border: 1px solid #FFFFFF;
     border-radius: 12px;
+    max-width: 243px;
     width: 100%;
 }
 
@@ -35,18 +39,42 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+    .main-hero {
+        margin-bottom: 75px;
+    }
+    .main-hero a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-
+    .main-hero {
+        margin-bottom: 75px;
+    }
+    .main-hero a {
+        font-size: 12px;
+    }
+    .main-hero__buttons .primary-button {
+        margin: 0 0 24px 0;
+    }
+    .main-hero__button {
+        max-width: 438px;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .main-hero {
+        margin-bottom: 98px;
+    }
+    .main-hero a {
+        font-size: 12px;
+    }
     .main-hero__buttons .primary-button {
-        margin-right: 0;
+        margin: 0 0 24px 0;
     }
     .main-hero__button {
+        max-width: 438px;
         width: 100%;
     }
 }

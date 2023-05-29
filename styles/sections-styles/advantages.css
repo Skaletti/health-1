@@ -1,5 +1,3 @@
-
-
 .advantages h3 {
     margin-bottom: 16px;
 }
@@ -8,10 +6,31 @@
     .advantages {
         flex-wrap: wrap;
     }
+    .advantages .content-column {
+        margin-bottom: 16px;
+    }
+    .advantages .content-block {
+        padding: 16px;
+    }
+    .advantages .content-block:first-child {
+        margin-bottom: 16px;
+    }
+    .advantages .content-column:first-child {
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-
+    .advantages {
+        flex-wrap: wrap;
+    }
+    .advantages .content-column {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .advantages .content-block:first-child {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
