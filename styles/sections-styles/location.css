@@ -1,0 +1,46 @@
+.location .content-block {
+    max-width: max-content;
+    flex-wrap: wrap;
+}
+
+.content-block__history {
+    margin-right: 32px;
+}
+.content-block__history-link {
+    max-width: 628px;
+    background: #E7F3FE;
+    border-radius: 8px;
+    padding: 21px 24px;
+    margin-bottom: 32px;
+}
+
+.content-block__history-link a {
+    font-family: GolosText-Regular, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D81ED;
+}
+
+.content-block__history-link img {
+    margin-right: 16px;
+}
+
+.content-block__history-description {
+    max-width: 560px;
+    width: 100%;
+    font-family: 'GolosText-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252525;
+}
+
+#location-map {
+    width: 492px;
+    height: 513px;
+}
+
+.content-block__location {
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+}
+

@@ -1,0 +1,59 @@
+.main-hero {
+    margin-bottom: 106px;
+}
+.main-hero__link {
+    margin-bottom: 64px;
+}
+.main-hero a{
+    font-family: GolosText-Regular, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.main-hero img {
+    margin-right: 12px;
+}
+
+.main-hero__button {
+    font-family: 'GolosText-Medium', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.phone-button {
+    padding: 28px 32px;
+}
+
+.primary-button {
+    background: #FFFFFF;
+    padding: 28px 64px;
+    margin-right: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .main-hero__buttons .primary-button {
+        margin-right: 0;
+    }
+    .main-hero__button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

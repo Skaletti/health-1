@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Здоровье 1</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script src="./scripts/v1.js"></script>
+    <script type="text/javascript">
+        let map, toothIcon;
+
+
+        DG.then(function () {
+            map = DG.map('location-map', {
+                center: [57.15842575525343, 65.53421740651049],
+                zoom: 20
+            });
+
+            toothIcon = DG.icon({
+                iconUrl: './assets/mapIcon.svg',
+                iconSize: [32, 32]
+            });
+            DG.marker([57.15842575525343, 65.53421740651049], {
+                icon: toothIcon
+            }).addTo(map).bindPopup('Здоровье-1');
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-background"></div>
+        <div class="header">
+            <img  class="header-logo" src="assets/logo.svg" alt="здоровье-1">
+        </div>
+
+        <div class="main-hero">
+            <h1 class="main-hero__title">Стоматология № 1 в Тюмени</h1>
+            <div class="main-hero__link">
+                <img src="assets/near_me.svg">
+                <a href="#">ул. Володарского, 17, Тюмень, Тюменская обл., 625003</a>
+            </div>
+
+            <div class="main-hero__buttons">
+                <button class="main-hero__button primary-button">
+                    <span>Записаться</span>
+                </button>
+                <button class="main-hero__button phone-button">
+                    <a href="tel:+79876543210">+7 987 654-32-10</a>
+                </button>
+            </div>
+        </div>
+
+        <main>
+            <section class="advantages flex">
+                <div class="content-column">
+                    <div class="content-block">
+                        <h3>Инновационное оборудование</h3>
+                        <p>В нашей клинике мы пользуемся передовым стоматологическим оборудованием из Германии, соответствующим самым высоким стандартам качества, и имеющим все необходимые сертификаты и лицензии для обеспечения безопасности и эффективности лечения.</p>
+                    </div>
+                    <div class="content-block">
+                        <h3>Высокопрофессиональные стоматологи</h3>
+                        <p>Команда нашей клиники состоит из опытных специалистов с высшим профессиональным образованием и высоким уровнем квалификации. Мы ценим профессионализм и постоянно развиваем навыки нашей команды для предоставления пациентам лучших результатов.</p>
+                    </div>
+                </div>
+                <div class="content-column">
+                    <div class="content-block">
+                        <h3>Бесплатная первая консультация</h3>
+                        <p>Мы рады предложить вам первую консультацию и диагностику полости рта абсолютно бесплатно. Вместе с нашими врачами вы сможете обсудить рекомендации, план лечения и подобрать наиболее подходящие вам методы и технологии.</p>
+                    </div>
+                    <div class="content-block">
+                        <h3>Гибкая система оплаты и доступность</h3>
+                        <p>Мы разрабатываем индивидуальные предложения для каждого пациента и предлагаем возможность оплаты стоматологических услуг в кредит. Также у нас действуют скидки для льготных категорий граждан, делая лечение доступным для всех желающих заботиться о своём здоровье.</p>
+                    </div>
+                </div>
+            </section>
+            
+                <section class="services">
+                <h2>Услуги</h2>
+                <div class="content-columns flex">
+                    <div class="content-column">
+                        <div class="content-block">
+                            <h3>Экстренная<br>стоматологическая помощь</h3>
+                            <ul class="content-block__list">
+                                <li class="content-block__list-item">
+                                    <span>1</span>
+                                    <p>Моментальное облегчение<br>острой зубной боли</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>2</span>
+                                    <p>Устранение зубного абсцесса с гарантией</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>3</span>
+                                    <p>Восстановление сломанных или выбитых зубов</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>4</span>
+                                    <p>Врачи-специалисты для лечения инфекций полости рта и зубов</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>5</span>
+                                    <p>Высокопрофессиональное удаление зуба мудрости</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-block">
+                            <h3>Стоматология для детей</h3>
+                            <ul class="content-block__list">
+                                <li class="content-block__list-item">
+                                    <span>1</span>
+                                    <p>Тщательная диагностика и консультации для ваших малюток</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>2</span>
+                                    <p>Эффективное детское ортодонтическое лечение</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>3</span>
+                                    <p>Только лучшее лечение заболеваний дёсен для детей</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-column">
+                        <div class="content-block">
+                            <h3>Терапия и профилактика в стоматологии</h3>
+                            <ul class="content-block__list">
+                                <li class="content-block__list-item">
+                                    <span>1</span>
+                                    <p>Консультации с мастером своего дела по профилактике и диагностике</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>2</span>
+                                    <p>Лучшая диагностика для предупреждения заболеваний дёсен в полости рта</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>3</span>
+                                    <p>Множество других стоматологических услуг от специалистов высокого класса</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-block">
+                            <h3>Эстетическая стоматология</h3>
+                            <ul class="content-block__list">
+                                <li class="content-block__list-item">
+                                    <span>1</span>
+                                    <p>Зубы будут сиять после нашей эксклюзивной процедуры отбеливания</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>2</span>
+                                    <p>Создание идеальной улыбки с помощью виниров и зубные имплантации</p>
+                                </li>
+                                <li class="content-block__list-item">
+                                    <span>3</span>
+                                    <p>Лёгкость и надёжность керамических коронок и мостов для восстановления улыбки</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="specialists">
+                <h2>Специалисты</h2>
+                <div class="content-columns flex">
+                    <div class="content-block">
+                        <img src="./assets/images/specialist-image.png" alt="Девятьярова Вера Степановна">
+                        <h3>Девятьярова Вера Степановна</h3>
+                        <div class="specialists-post">
+                            <span>Врач стоматолог-терапевт</span>
+                        </div>
+                        <p>Выпускница Ижевского государственного медицинского института, квалификация «врач-стоматолог» по специальности «Cтоматология». Сертифицированный эксперт терапевтической стоматологии с 2013 года. Отличается высокой работоспособностью и вниманием к пациентам</p>
+                    </div>
+                    <div class="content-block">
+                        <img src="./assets/images/specialist-image.png" alt="Попов Александр Фёдорович">
+                        <h3>Попов Александр Фёдорович</h3>
+                        <div class="specialists-post">
+                            <span>Врач стоматолог-ортопед</span>
+                        </div>
+                        <p>Выпускник Уральской государственной медицинской академии, квалификация «врач-стоматолог» по специальности «Cтоматология». Сертифицированный специалист ортопедической стоматологии с 2015 года. Обеспечивает высокое качество работы, а его личное обаяние создаёт комфортную атмосферу на приёме</p>
+                    </div>
+                    <div class="content-block">
+                        <img src="./assets/images/specialist-image.png" alt="Абрамова Любовь Валентиновна">
+                        <h3>Абрамова Любовь Валентиновна</h3>
+                        <div class="specialists-post">
+                            <span>Врач стоматолог-терапевт</span>
+                        </div>
+                        <p>Выпускница Свердловского областного медицинского училища по специальности «Стоматология» с 1970 года. Высококлассный специалист в стоматологии с многолетним опытом как залог успешного лечения. Владеет современными методами терапевтической стоматологии</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location">
+                <h2>История и расположение</h2>
+                <div class="content-block flex">
+                    <div class="content-block__history">
+                        <div class="content-block__history-link">
+                            <img src="assets/near_me_blue.svg">
+                            <a href="#">ул.Володарского, 17, Тюмень, Тюменская обл., 625003</a>
+                        </div>
+                        <div class="content-block__history-description">
+                            <p>Стоматологическая клиника «Здоровье-1», основанная в 1996 году, привлекает жителей региона благодаря высокому качеству услуг,
+                                доступным ценам и уютной атмосфере. Мы стремимся предоставить профессиональное стоматологическое обслуживание по
+                                справедливой цене, в соответствии с международными и передовыми российскими стандартами.</p>
+                            <br>
+                            <p>«Здоровье-1» это:</p>
+                            <ul>
+                                <li>— Центральное расположение;</li>
+                                <li>— Более 25 лет успешной практики;</li>
+                                <li>— Тысячи довольных пациентов;</li>
+                                <li>— Ведущие специалисты города;</li>
+                                <li>— Современные технологии и высокие стандарты качества;</li>
+                                <li>— Привлекательные акции и предложения;</li>
+                                <li>— Уют, комфорт и дружелюбный коллектив.</li>
+                            </ul>
+                            <br>
+                            <p>Мы предлагаем широкий спектр услуг, включая лечение и реставрацию зубов, профилактику кариеса, протезирование,
+                                рентгендиагностику, лечение пародонтита с использованием аппарата Вектор, шинирование зубов и др.</p>
+                            <br>
+                            <p>Приём проходит по предварительной записи. Предоставляем возможность лечения в кредит и работаем с полисом ОМС.</p>
+                            <br>
+                            <p>Стоматология «Здоровье-1» приглашает вас стать нашим пациентом и рада, что так многие выбирают нашу
+                                клинику и рекомендуют её своим близким, друзьям и знакомым!</p>
+                        </div>
+                    </div>
+                    <div id="location-map" class="content-block__location">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

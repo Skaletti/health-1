@@ -1,0 +1,36 @@
+h2 {
+    margin-bottom: 32px;
+}
+.services h3 {
+    margin-bottom: 32px;
+}
+.content-columns {
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content-block__list-item {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.content-block__list-item span {
+    font-family: 'Unbounded-Regular', sans-serif;
+    display: flex;
+    max-width: 48px;
+    max-height: 48px;
+    width: 100%;
+    color: #0D81ED;
+    background: #E7F3FE;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.content-block__list-item p {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 16px;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+}
