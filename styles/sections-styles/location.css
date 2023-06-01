@@ -57,14 +57,20 @@
         display: none;
     }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .location .content-block {
         flex-wrap: wrap;
+    }
+    .content-block__history {
+        margin: 0 0 32px 0;
     }
     .content-block__history-link a {
         font-size: 12px;
     }
     .content-block__history-description p {
+        font-size: 10px;
+    }
+    .content-block__history-description ul {
         font-size: 10px;
     }
 }
@@ -73,6 +79,9 @@
         font-size: 16px;
     }
     .content-block__history-description p {
+        font-size: 10px;
+    }
+    .content-block__history-description ul {
         font-size: 10px;
     }
 }
