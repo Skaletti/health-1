@@ -3,6 +3,8 @@
 }
 .content-block__history {
     margin-right: 32px;
+    max-width: 628px;
+    width: 100%;
 }
 .content-block__history-link {
     display: flex;
@@ -57,12 +59,16 @@
         display: none;
     }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
     .location .content-block {
         flex-wrap: wrap;
     }
     .content-block__history {
-        margin: 0 0 32px 0;
+        margin-right: 32px;
+        max-width: 375px;
+    }
+    .content-block__history-description {
+        margin-bottom: 32px;
     }
     .content-block__history-link a {
         font-size: 12px;
@@ -75,6 +81,10 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .content-block__history {
+        margin-right: 32px;
+        max-width: 415px;
+    }
     .content-block__history-link a {
         font-size: 16px;
     }
