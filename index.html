@@ -13,7 +13,6 @@
     <script type="text/javascript">
         let map, toothIcon;
 
-
         DG.then(function () {
             map = DG.map('location-map', {
                 center: [57.15842575525343, 65.53421740651049],
@@ -24,10 +23,19 @@
                 iconUrl: './assets/mapIcon.svg',
                 iconSize: [32, 32]
             });
-            DG.marker([57.15842575525343, 65.53421740651049], {
+    
+            DG.marker([57.15834, 65.53418], {
                 icon: toothIcon
             }).addTo(map).bindPopup('Здоровье-1');
-        });
+
+            const linkButton = document.querySelector('.dg-attribution__open2gis-button_name_open')
+
+            linkButton.addEventListener('click', function(event) {
+                event.preventDefault()
+
+                window.open('https://2gis.ru/tyumen/directions/points/%7C65.534182%2C57.158343%3B1830115629621092?m=65.534034%2C57.158416%2F20')
+            })
+        })
     </script>
 </head>
 <body>
@@ -48,9 +56,7 @@
                 <button class="main-hero__button primary-button">
                     <span>Записаться</span>
                 </button>
-<!--                <button class="main-hero__button phone-button">-->
                     <a class="main-hero__button phone-button" href="tel:+79876543210">+7 987 654-32-10</a>
-<!--                </button>-->
             </div>
         </div>
 
@@ -234,7 +240,6 @@
                         </div>
                     </div>
                     <div id="location-map" class="content-block__location">
-
                     </div>
                 </div>
             </section>
