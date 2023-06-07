@@ -1,5 +1,8 @@
 .header {
-    margin: 52px 0 68px;
+    margin: 60px 0 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo{
@@ -7,13 +10,36 @@
     height: 34px;
 }
 
+.header-time {
+    font-family: GolosText-Medium, sans-serif;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 25px 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .header-time {
+        padding: 16px;
+    }
+    .header-logo{
+        width: 170px;
+        height: 20px;
+    }
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .header-background {
         height: 683px;
     }
+    .header-time {
+        display: none;
+    }
     .header-logo{
-        width: 286px;
-        height: 34px;
+        width: 170px;
+        height: 20px;
     }
 }
