@@ -1,0 +1,55 @@
+.prices {
+    padding: 32px;
+}
+.prices-header {
+    display: flex;
+    margin-bottom: 35px;
+}
+.prices h2 {
+    margin: 0 24px 0 0;
+}
+
+
+.prices .primary-button {
+    padding: 19px 24px;
+}
+
+.prices-downloader {
+    font-family: 'GolosText-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .prices {
+        padding: 16px;
+    }
+    .prices-header {
+        margin-bottom: 27px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prices-header {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .prices h2 {
+        margin: 0 0 16px 0;
+    }
+    .prices .primary-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .prices-header {
+        margin-bottom: 8px;
+    }
+}
