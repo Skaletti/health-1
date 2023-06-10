@@ -64,6 +64,10 @@
     border: 1px solid #FFFFFF;
     border-radius: 8px;
 }
+.social-networks__link:hover {
+    color: #0E1C25;
+    background-color: #FFFFFF;
+}
 @media screen and (max-width: 1000px) {
     .main-hero__link {
         margin-bottom: 32px;

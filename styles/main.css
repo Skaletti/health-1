@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "header.css";
+@import "footer.css";
 @import "main-hero.css";
 @import "sections-styles/advantages.css";
 @import "sections-styles/prices.css";
@@ -41,12 +42,15 @@ p {
     border-radius: 8px;
     height: fit-content;
 }
+.primary-button:hover {
+    background-color: #3E97FF;
+}
 
 .container {
     max-width: 1256px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 .container-background {
     position: absolute;

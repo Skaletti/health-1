@@ -2,9 +2,39 @@
     margin-bottom: 64px;
 }
 
+.specialists h2 {
+    margin-bottom: 32px;
+}
+
 .specialists h3 {
     margin: 16px 0;
     line-height: 120%;
+}
+
+.specialists img {
+    width: auto;
+    border: 1px solid #DCECFF;
+    border-radius: 8px;
+}
+
+.specialists .content {
+    display: flex;
+    column-gap: 20px;
+}
+
+.specialists .content-column {
+    display: flex;
+    column-gap: 20px;
+}
+
+.specialists .content-block {
+    max-width: 289px;
+    width: 100%;
+    padding: 0;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
 }
 
 .specialists-span__qualification {
@@ -17,6 +47,7 @@
     background: #0075FF;
     border-radius: 6px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .specialists-span__experience {
@@ -29,13 +60,28 @@
     border: 1px solid #0075FF;
     border-radius: 6px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 1024px) {
     .specialists {
         margin-bottom: 32px;
     }
-
+    .specialists .content {
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+    .specialists .content-block {
+        max-width: 470px;
+    }
+    .specialists img {
+        max-width: 470px;
+        max-height: 256px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -46,14 +92,68 @@
 }
 
 @media screen and (max-width: 480px) {
+    .specialists h2 {
+        margin-bottom: 16px;
+    }
     .specialists h3 {
         margin: 8px 0;
+    }
+    .specialists img {
+        max-width: 210px;
+        max-height: 256px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .specialists-span__qualification {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .specialists-span__experience {
+        margin-bottom: 8px;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .specialists img {
+        max-width: 470px;
+        max-height: 152px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .specialists {
+        margin-bottom: 16px;
+    }
+    .specialists .content {
+        row-gap: 16px;
+    }
+    .specialists .content-column {
+        flex-wrap: wrap;
+        row-gap: 16px;
     }
 }
 
 @media screen and (max-width: 320px) {
+    .specialists img {
+        max-width: 280px;
+        max-height: 152px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
     .specialists {
         margin-bottom: 16px;
     }
-
+    .specialists .content {
+        row-gap: 16px;
+    }
+    .specialists .content-column {
+        flex-wrap: wrap;
+        row-gap: 16px;
+    }
 }
