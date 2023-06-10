@@ -39,11 +39,27 @@ p {
     font-family: 'GolosText-Medium', sans-serif;
     color: #FFFFFF;
     background-color: #0075FF;
+    position: relative;
     border-radius: 8px;
     height: fit-content;
 }
-.primary-button:hover {
-    background-color: #3E97FF;
+.primary-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 5;
+    width: 100%;
+    height: 1px;
+    transition: 0.3s;
+    border-radius: 8px;
+    color: #0E1C25;
+}
+.primary-button:hover::after {
+    background-color: #3E97FF;;
+    opacity: 0.3;
+    height: 100%;
 }
 
 .container {

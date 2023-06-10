@@ -1,5 +1,7 @@
 .prices {
     padding: 32px;
+    border: 1px solid #DCECFF;
+    border-radius: 8px;
 }
 .prices-header {
     display: flex;

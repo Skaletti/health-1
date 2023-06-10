@@ -38,9 +38,15 @@
 .content-block__history-rating {
     display: flex;
 }
+.rating-cart span{
+    font-family: 'GolosText-Regular', sans-serif;
+    font-size: 16px;
+    color: #0E1C25;
+}
 .content-block__history-rating .rating-cart:first-child{
     margin-right: 16px;
 }
+
 .location .rating-cart {
     display: flex;
     flex-direction: column;
@@ -50,8 +56,9 @@
     border-radius: 8px;
 }
 
-f.location .rating-logo {
+.location .rating-logo {
     max-width: 120px;
+    margin-bottom: 16px;
 }
 
 .location .rating-star {

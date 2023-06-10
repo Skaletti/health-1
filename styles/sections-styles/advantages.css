@@ -18,6 +18,8 @@
     max-height: max-content;
     width: 100%;
     min-height: 200px;
+    border: 1px solid #DCECFF;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 1024px) {
