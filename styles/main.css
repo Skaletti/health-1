@@ -1,10 +1,13 @@
 @import "fonts.css";
 @import "header.css";
+@import "footer.css";
 @import "main-hero.css";
 @import "sections-styles/advantages.css";
-@import "sections-styles/services.css";
+@import "sections-styles/prices.css";
 @import "sections-styles/specialists.css";
 @import "sections-styles/location.css";
+@import "swiper-style.min.css";
+@import "vendor/swiper.css";
 
 h1 {
     font-family: 'Unbounded-Medium', sans-serif;
@@ -32,11 +35,38 @@ p {
     color: #252525;
 }
 
+.primary-button {
+    font-family: 'GolosText-Medium', sans-serif;
+    color: #FFFFFF;
+    background-color: #0075FF;
+    position: relative;
+    border-radius: 8px;
+    height: fit-content;
+}
+.primary-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 5;
+    width: 100%;
+    height: 1px;
+    transition: 0.3s;
+    border-radius: 8px;
+    color: #0E1C25;
+}
+.primary-button:hover::after {
+    background-color: #3E97FF;;
+    opacity: 0.3;
+    height: 100%;
+}
+
 .container {
-    max-width: 1216px;
+    max-width: 1256px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 .container-background {
     position: absolute;
@@ -63,21 +93,10 @@ section {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     box-shadow: 0 61px 36px rgba(0, 0, 0, 0.01), 0 27px 27px rgba(0, 0, 0, 0.02), 0 7px 15px rgba(0, 0, 0, 0.02), 0 0 0 rgba(0, 0, 0, 0.02);
-    border-radius: 16px;
-    background-size: contain;
+    border-radius: 8px;
 }
 
-.content-block:first-child {
-    margin-bottom: 20px;
-}
-.content-column:first-child {
-    margin-right: 20px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        font-size: 60px;
-    }
+@media screen and (max-width: 1024px) {
     h2 {
         font-size: 32px;
     }
@@ -91,9 +110,9 @@ section {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
     h2 {
         font-size: 24px;
@@ -111,7 +130,7 @@ section {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 24px;
     }
@@ -119,10 +138,10 @@ section {
         font-size: 24px;
     }
     h3 {
-        font-size: 16px;
+        font-size: 10px;
     }
     p {
-        font-size: 12px;
+        font-size: 10px;
     }
     .container-background {
         background-size: 100% 710px;
@@ -132,6 +151,9 @@ section {
 }
 
 @media screen and (max-width: 320px) {
+    h3 {
+        font-size: 12px;
+    }
     .header-background {
         background-position: center center;
     }

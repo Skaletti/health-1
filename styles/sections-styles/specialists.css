@@ -1,83 +1,159 @@
-.specialists .content-block {
-    display: block;
+.specialists {
+    margin-bottom: 64px;
 }
 
-.specialists .content-block:first-child {
-    margin-bottom: 0;
-}
-
-.specialists .content-block:not(:last-child) {
-    margin-right: 20px;
-}
-
-.content-block__image-wrap {
-    max-width: 375px;
+.specialists h2 {
     margin-bottom: 32px;
-}
-
-.specialists img {
-    width: 100%;
-    height:auto;
 }
 
 .specialists h3 {
+    margin: 16px 0;
+    line-height: 120%;
+}
+
+.specialists img {
+    width: auto;
+    border: 1px solid #DCECFF;
+    border-radius: 8px;
+}
+
+.specialists .content {
+    display: flex;
+    column-gap: 20px;
+}
+
+.specialists .content-column {
+    display: flex;
+    column-gap: 20px;
+}
+
+.specialists .content-block {
+    max-width: 289px;
+    width: 100%;
+    padding: 0;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+.specialists-span__qualification {
+    font-family: 'GolosText-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 11px;
+    display: block;
+    width: fit-content;
+    color: #FFFFFF;
+    background: #0075FF;
+    border-radius: 6px;
+    padding: 16px;
     margin-bottom: 16px;
 }
 
-.specialists .specialists-post {
-    border-radius: 8px;
-    margin-bottom: 32px;
-    /*width: 256px;*/
-    padding: 16px 24px;
-    color: #0D81ED;
-    background: #E7F3FE;
-}
-
-.specialists-post span {
-    font-family: GolosText-Regular, sans-serif;
+.specialists-span__experience {
+    font-family: 'GolosText-Regular', sans-serif;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 11px;
+    display: block;
+    width: fit-content;
+    color: #0075FF;
+    border: 1px solid #0075FF;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .specialists {
+        margin-bottom: 32px;
+    }
+    .specialists .content {
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+    .specialists .content-block {
+        max-width: 470px;
+    }
+    .specialists img {
+        max-width: 470px;
+        max-height: 256px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .specialists {
+        margin-bottom: 24px;
+    }
 
 }
 
-.specialists p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #252525;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .specialists p {
+@media screen and (max-width: 480px) {
+    .specialists h2 {
+        margin-bottom: 16px;
+    }
+    .specialists h3 {
+        margin: 8px 0;
+    }
+    .specialists img {
+        max-width: 210px;
+        max-height: 256px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .specialists-span__qualification {
         font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .specialists-span__experience {
+        margin-bottom: 8px;
+        padding: 12px;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .specialists .content-columns {
+@media screen and (max-width: 479px) {
+    .specialists img {
+        max-width: 470px;
+        max-height: 152px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .specialists {
+        margin-bottom: 16px;
+    }
+    .specialists .content {
+        row-gap: 16px;
+    }
+    .specialists .content-column {
         flex-wrap: wrap;
-    }
-    .specialists .content-block:not(:last-child) {
-        margin-right: 0;
-    }
-
-    .specialists .content-block:not(:last-child) {
-        margin-bottom: 20px;
+        row-gap: 16px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .specialists .content-columns {
+@media screen and (max-width: 320px) {
+    .specialists img {
+        max-width: 280px;
+        max-height: 152px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .specialists {
+        margin-bottom: 16px;
+    }
+    .specialists .content {
+        row-gap: 16px;
+    }
+    .specialists .content-column {
         flex-wrap: wrap;
-    }
-    .specialists .content-block:not(:last-child) {
-        margin-right: 0;
-    }
-
-    .specialists .content-block:not(:last-child) {
-        margin-bottom: 20px;
+        row-gap: 16px;
     }
 }

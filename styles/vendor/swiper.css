@@ -1,0 +1,73 @@
+.swiper {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #DCECFF;
+    border-radius: 8px;
+    margin-bottom: 64px;
+}
+
+.swiper-button-prev {
+    width: 64px;
+    height: 64px;
+    background: url("/assets/swiper-arrow.svg") no-repeat center;
+    background-size: cover;
+}
+.swiper-button-prev::after {
+    display: none;
+}
+.swiper-button-prev:active {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.swiper-button-next {
+    width: 64px;
+    height: 64px;
+    background: url("/assets/swiper-arrow.svg") no-repeat center;
+    background-size: cover;
+    rotate: 180deg;
+}
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-button-next:active {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .swiper {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+    }
+    .swiper-button-next {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .swiper {
+        margin-bottom: 16px;
+    }
+}
+
