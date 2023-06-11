@@ -9,7 +9,7 @@
 .swiper-button-prev {
     width: 64px;
     height: 64px;
-    background: url("/assets/swiper-arrow.svg") no-repeat center;
+    background: url("../../assets/swiper-arrow.svg") no-repeat center;
     background-size: cover;
 }
 .swiper-button-prev::after {
@@ -24,7 +24,7 @@
 .swiper-button-next {
     width: 64px;
     height: 64px;
-    background: url("/assets/swiper-arrow.svg") no-repeat center;
+    background: url("../../assets/swiper-arrow.svg") no-repeat center;
     background-size: cover;
     rotate: 180deg;
 }
