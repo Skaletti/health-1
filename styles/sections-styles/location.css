@@ -122,12 +122,18 @@
 }
 
 @media screen and (max-width: 480px) {
+    .location {
+        margin-bottom: 24px;
+    }
     .location h2 {
         margin-bottom: 16px;
     }
 }
 
 @media screen and (max-width: 320px) {
+    .location {
+        margin-bottom: 32px;
+    }
     .location .rating-logo {
         max-width: 90px;
     }

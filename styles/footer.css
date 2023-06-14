@@ -61,6 +61,12 @@ footer .social-networks__column {
     display: flex;
     column-gap: 20px;
 }
+footer .social-networks__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .footer-signature {
     font-family: GolosText-Regular;
     font-size: 14px;
@@ -122,10 +128,21 @@ footer .social-networks__column {
 }
 
 @media screen and (max-width: 320px) {
+    .footer-logo {
+        width: 289px;
+        height: 14px;
+    }
+    .footer-wrapper {
+        margin-top: 32px;
+    }
     .footer__phone {
         font-size: 11px;
     }
     .footer-signature {
         font-size: 8px;
+    }
+    footer .social-networks__link {
+        font-size: 12px;
+        padding: 16px 1px;
     }
 }
